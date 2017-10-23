@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+  <Ad>
+    <ImageUrl>/Images/amazon.jpg</ImageUrl>
+    <NavigateUrl>http://www.amazon.com</NavigateUrl>
+    <AlternateText>Amazon Site</AlternateText>
+    <Impressions>50</Impressions>
+    <Keyword>Amazon</Keyword>
+  </Ad>
+
+
+  <Ad>
+    <ImageUrl>/Images/vodafone.jpg</ImageUrl>
+    <NavigateUrl>http://www.vodafone.in</NavigateUrl>
+    <AlternateText>Fabmart Site</AlternateText>
+    <Impressions>40</Impressions>
+    <Keyword>Fabmart</Keyword>
+  </Ad>
+
+</Advertisements>

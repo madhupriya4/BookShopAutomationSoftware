@@ -1,0 +1,3 @@
+INSERT INTO [dbo].[Book] ([ISBN], [Name], [Author], [Publisher], [Category], [Availability], [Price], [Address], [NoOfDays]) VALUES (1, N'The Hitchhiker''s Guide to the Galaxy', N'Douglas Adams', N'Publisher1', N'Fiction', 3, CAST(350.0000 AS Money), N'Addr1', 3)
+INSERT INTO [dbo].[Book] ([ISBN], [Name], [Author], [Publisher], [Category], [Availability], [Price], [Address], [NoOfDays]) VALUES (2, N'Kane and Abel', N'Jeffrey Archer', N'Publisher2', N'Fiction', 0, CAST(400.0000 AS Money), N'Addr2', 5)
+INSERT INTO [dbo].[Book] ([ISBN], [Name], [Author], [Publisher], [Category], [Availability], [Price], [Address], [NoOfDays]) VALUES (3, N'The Da Vinci Code', N'Dan Brown', N'Publisher 1', N'Mystery', 4, CAST(400.0000 AS Money), N'Addr1', 3)

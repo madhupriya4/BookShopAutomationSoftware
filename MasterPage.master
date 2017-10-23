@@ -1,0 +1,62 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href = "MasterStyle.css" rel = "stylesheet" type = "text/css" /> 
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class = "Header">
+            <h1> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Book Shop Automation Software   
+            </h1>
+            <asp:Label ID="Label1" runat="server" Visible="false" Text="Label"></asp:Label>
+            <div style="height: 22px; margin-left: 769px; margin-top: 0px">
+                <asp:Button ID="Button1" runat="server" PostBackUrl="~/LoginFinal.aspx" Text="Logout" Visible="False" BackColor="#FFCC66" Height="22px" style="margin-left: 0px; margin-top: 0px" />
+            </div>
+          </div>
+
+        <div class = "LeftPanel">
+            <br />
+            <br />
+&nbsp;
+        <asp:AdRotator ID="AdRotator1" runat="server" DataSourceID="XmlDataSource1" Target="_blank" />
+            <br />
+        <asp:XmlDataSource ID="XmlDataSource1" runat="server" DataFile="~/XMLFile1.xml"></asp:XmlDataSource>
+        </div>
+        
+        
+        
+       
+        
+
+        <div class = "CenterPanel">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        
+        
+        </asp:ContentPlaceHolder>
+        </div>
+        <div class = "RightPanel">      
+               <asp:Calendar ID="Calendar1" runat="server" BackColor="#FFFFCC" BorderColor="#FFCC66" BorderWidth="1px" DayNameFormat="Shortest" Font-Names="Verdana" Font-Size="8pt" ForeColor="#663399" Height="200px" style="margin-top: 42px; margin-left: 5px;" Width="220px" ShowGridLines="True">
+                   <DayHeaderStyle BackColor="#FFCC66" Height="1px" Font-Bold="True" />
+                   <NextPrevStyle Font-Size="9pt" ForeColor="#FFFFCC" />
+                   <OtherMonthDayStyle ForeColor="#CC9966" />
+                   <SelectedDayStyle BackColor="#CCCCFF" Font-Bold="True" />
+                   <SelectorStyle BackColor="#FFCC66" />
+                   <TitleStyle BackColor="#990000" Font-Bold="True" Font-Size="9pt" ForeColor="#FFFFCC" />
+                   <TodayDayStyle BackColor="#FFCC66" ForeColor="White" />
+               </asp:Calendar>
+        </div>
+        <div class="Footer">
+            <br />
+            <asp:Label ID="Label2" runat="server" Font-Bold="True"></asp:Label>
+        </div>
+        
+    </form>
+</body>
+</html>

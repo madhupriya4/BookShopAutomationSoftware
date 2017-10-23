@@ -1,0 +1,78 @@
+﻿body {
+    background-color:black;
+}
+.Header {
+    position: absolute;
+    top: -18px;
+    left: 13px;
+    height: 118px;
+    text-align: center;
+    background-color:crimson;
+    width:1348px;
+    border-bottom-width:10px;
+    border-bottom-color:black;
+    background-image:url('Images/stripes.jpg');
+    color:white;
+
+}
+.LeftPanel { 
+    margin-top:40px; 
+   position: absolute;  
+   top: 68px;  
+   left: 10px; 
+   width: 220px; 
+   background-color:cadetblue;
+   background-image:url("Images/Book1.jpg");
+   bottom:45px;
+}
+.RightPanel {
+    margin-top:40px;
+    position: absolute;
+    top: 68px;
+    left: 1124px;
+    width: 227px;
+    background-color:cadetblue;
+    bottom:45px;
+    margin-left: 10px;
+    
+    background-image:url("Images/Book1.jpg");
+}
+.CenterPanel {
+    margin-top:40px;
+    position: absolute;
+    top: 68px;
+    margin-left: 175px;
+    width:905px;
+    background-color:black;
+    font:13px verdana;
+    color:white;
+    left: 55px;
+    bottom:45px;
+    background-image:url("Images/Black_background.jpg");
+}
+.Footer {
+    position:absolute;
+    bottom:0px;
+    height:35px;  
+    background:#6cf;
+    text-align: center;
+    background-color:darkcyan;
+    left: 10px;
+    width:1350px;
+    background-color:maroon;
+    color:white;
+    
+}
+
+@font-face { font-family: "DJB Letter Game Tiles 3"; src: url('SF Movie Poster.ttf') }
+h1 {
+	font: normal normal normal 70px "DJB Letter Game Tiles 3";
+	text-shadow: 0px 0px 0px rgba(0, 0, 0, 1);
+	text-decoration: none;
+	text-transform: none;
+	color: white;
+    margin-top:10px;
+    width:1000px;
+    align-content:center;
+    height: 45px;
+}
